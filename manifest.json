@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AMC-notifications",
+  "version": "1.11.0",
+  "offline_enabled": true,
+  "minimum_chrome_version": "93",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "AMC_Notifications"
+  },
+  "devtools_page": "interface/devtools/devtool.html",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "storage",
+    "notifications",
+    "alarms",
+    "storage"
+  ],
+  "icons": {
+    "16": "amc.png",
+    "32": "amc.png",
+    "48": "amc.png",
+    "128": "amc.png"
+  },
+  "host_permissions": ["<all_urls>"],
+  "incognito": "split"
+}
